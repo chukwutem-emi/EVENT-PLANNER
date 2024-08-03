@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+.eventBody {
+    margin: 0;
+    background-color: white;
+    height: 100vh;
+}
+.goto {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 40;
+    display: flex;
+    justify-content: end;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.918);
+}
+.navLink {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    cursor: pointer;
+}
+.navLink:hover {
+    text-decoration: underline;
+}
+.reloadPage {
+    font-size: 2rem;
+    color: darkblue;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+.reloadPage:hover {
+    background-color: darkblue;
+    color: white;
+}
+.eventForm {
+    width: 40rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.918);
+    margin: 3rem auto;
+    padding: 0 2rem;
+    border-radius: 10px;
+}
+.eventH1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+.eventName, .eventDate, #eventType, #eventPicture, .eventTime, .eventVenue, .receptionVenue, .phoneNumber {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border: 1px solid blue;
+    outline: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+.eventBtn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 2rem auto 1rem auto;
+}
+.eventBtn:hover {
+    background-color: blue;
+}
+
+.selected-option {
+    font-weight: bold;
+    color: blue;
+}
+.eventText {
+    width: 100%;
+    padding: 4rem;
+    border: none;
+    outline: none;
+    border: 2px solid blue;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px 40px 20px 40px;
+}
+.invitation {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border: 1px solid blue;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px 40px 20px 40px;
+}
+@media only screen and (max-width:900px) {
+    * {
+        box-sizing: border-box;
+    }
+    .goto {
+        top: 0;
+        right: 0;
+        left: 0;
+        position: fixed;
+        z-index: 40;
+        display: flex;
+        justify-content: end;
+        background-color: white;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.918);
+    }
+    .navLink {
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkblue;
+        cursor: pointer;
+    }
+    .navLink:hover {
+        text-decoration: underline;
+    }
+    .reloadPage {
+        font-size: 2rem;
+        color: darkblue;
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        margin-top: 1rem;
+        border-radius: 50%;
+    }
+    .reloadPage:hover {
+        background-color: darkblue;
+        color: white;
+    }
+    .eventForm {
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.918);
+        margin: 3rem auto;
+        padding: 0 2rem;
+        border-radius: 10px;
+    }
+    .eventH1 {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkblue;
+    }
+    label {
+        display: block;
+        margin-bottom: 0.3rem;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkblue;
+    }
+    .eventName, .eventDate, #eventType, #eventPicture, .eventTime, .eventVenue, .receptionVenue, .phoneNumber {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+        border: none;
+        border: 1px solid blue;
+        outline: none;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .eventBtn {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.5rem;
+        border: none;
+        background-color: darkblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 2rem auto 1rem auto;
+    }
+    .eventBtn:hover {
+        background-color: blue;
+    }
+    
+    .selected-option {
+        font-weight: bold;
+        color: blue;
+    }
+    .eventText {
+        width: 100%;
+        padding: 4rem;
+        border: none;
+        outline: none;
+        border: 2px solid blue;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px 40px 20px 40px;
+    }
+    .invitation {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        border: 1px solid blue;
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px 40px 20px 40px;
+    }
+}

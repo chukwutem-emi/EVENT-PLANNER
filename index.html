@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Chukwutem Emi">
+    <meta name="Description" content="This page is all about event planning">
+    <link rel="stylesheet" href="./style.css">
+    <title>Event planner</title>
+</head>
+<body class="eventBody" oncontextmenu="return false">
+    <nav class="goto">
+        <a href="./event_planner.html" class="navLink" target="_self" title="Navigate to display page">Display</a>
+    </nav>
+    <form class="eventForm">
+        <button class="reloadPage" title="reload page">&orarr;</button>
+        <h1 class="eventH1">Event planner</h1>
+        <label for="eventName">Event title<strong>:</strong></label>
+        <input type="text" class="eventName" id="eventName" placeholder="Name of the event" required>
+        <label for="eventDate">Event date: </label>
+        <input type="date" class="eventDate" id="eventDate" placeholder="Event date" required oncontextmenu="return false">
+        <label for="eventTime">Time for the event<strong>:</strong></label>
+        <input type="text" class="eventTime" id="eventTime" placeholder="Enter the time" title="Please input only the time e.g 10:00AM, 12:00PM e.t.c" required>
+        <label for="eventVenue">Event venue<strong>:</strong></label>
+        <input type="text" class="eventVenue" id="eventVenue" placeholder="Event venue" required>
+        <label for="receptionVenue">Reception venue<strong>:</strong></label>
+        <input type="text" class="receptionVenue" id="receptionVenue" placeholder="Reception venue and time" required>
+        <label for="eventType">Type of event<strong>:</strong></label>
+        <select name="eventType" id="eventType" required title="click the dropdown menu">
+            <option value="Event">Choose event</option>
+            <option value="Birthday celebration">Birthday celebration</option>
+            <option value="Traditional marriage">Traditional marriage</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Burial">Burial</option>
+        </select>
+        <label for="eventPicture">Picture <strong>:</strong></label>
+        <input type="file" accept="image/*, .pdf, .docx" class="eventPicture" id="eventPicture" placeholder="Upload Picture" oncontextmenu="return false" required>
+        <label for="phoneNumber">Phone number <strong>:</strong></label>
+        <input type="tel" class="phoneNumber" id="phoneNumber" placeholder="Your phone number" pattern="\d{11}" title="Please enter a 11-digit phone number" required>
+        <label for="invitation">Write an invitation <strong>:</strong></label>
+        <textarea name="" id="invitation" class="invitation" placeholder="Write an invitation to your invitees or guests" required autofocus></textarea>
+        <label for="comment">Write something about the event<strong>:</strong></label>
+        <textarea name="comment" id="comment" class="eventText" placeholder="Write something about the event here" autocapitalize="value" autofocus required></textarea>
+        <button type="submit" class="eventBtn">Add event</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>

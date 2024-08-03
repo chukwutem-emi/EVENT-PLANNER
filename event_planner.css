@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    margin: 0;
+    height: 100vh;
+}
+nav {
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 2rem;
+    position: fixed;
+    z-index: 40;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.795);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.display-container {
+    width: 40rem;
+    margin: 8rem auto 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.89);
+    background-color: white;
+    padding: 2rem;
+}
+.navBtn {
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navBtn:hover {
+    color: white;
+    background-color: black;
+}
+.displayBtn {
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: darkblue;
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.displayBtn:hover {
+    background-color: blue;
+}
+.eventDiv {
+    display: none;
+}
+.eventDiv-display {
+    display: block;
+    width: 100%;
+    background-color:#9ca19c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.89);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    color: black;
+}
+.eventTypeDs {
+    text-align: center;
+    font-family:cursive;
+    margin: 0 auto;
+    color: darkblue;
+}
+.eventFile {
+    margin: 0 0 0 14rem;
+}
+.eventDetails {
+    display: block;
+    list-style-type: none; 
+}
+button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    margin-right: 1rem;
+    border-radius: 6px;
+    background-color: darkblue;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.downloadBtn {
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.downloadBtn:hover {
+    background-color: blue;
+}
+.eventDetailsH6, .venueH3, .para {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    color: darkblue;
+}
+.paraEl {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.invitationDisplay {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 50%;
+    margin: 0 auto;
+}
+.receptVenue {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 70%;
+}
+.name {
+    font-size: 0.7rem;
+    color: blue; 
+}
+.phoneNum {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+hr {
+    font-weight: bold;
+}
+@media only screen and (max-width:900px) {
+    * {
+        box-sizing: border-box;
+    }
+    nav {
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 2rem;
+        position: fixed;
+        z-index: 40;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.795);
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .display-container {
+        width: 90%;
+        margin: 8rem auto 0 auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.89);
+        background-color: white;
+        padding: 2rem;
+    }
+    .navBtn {
+        border: none;
+        background-color: white;
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .navBtn:hover {
+        color: white;
+        background-color: black;
+    }
+    .displayBtn {
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        background-color: darkblue;
+        font-size: 1.3rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    .displayBtn:hover {
+        background-color: blue;
+    }
+    .eventDiv {
+        display: none;
+    }
+    .eventDiv-display {
+        display: block;
+        width: 100%;
+        background-color:#9ca19c;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.89);
+        border-radius: 8px;
+        padding: 2rem;
+        margin: 2rem auto;
+        color: black;
+    }
+    .eventTypeDs {
+        text-align: center;
+        font-family:cursive;
+        margin: 0 auto;
+        color: darkblue;
+    }
+    .eventFile {
+        margin: 0 auto;
+    }
+    .eventDetails {
+        display: block;
+        list-style-type: none; 
+    }
+    button {
+        padding: 5px 10px;
+        border: none;
+        color: white;
+        margin-right: 1rem;
+        border-radius: 6px;
+        background-color: darkblue;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    .downloadBtn {
+        width: 100%;
+        border: none;
+        color: white;
+        background-color: darkblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+        padding: 0.8rem;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .downloadBtn:hover {
+        background-color: blue;
+    }
+    .eventDetailsH6, .venueH3, .para {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        color: darkblue;
+    }
+    .paraEl {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        word-wrap: break-word;
+        white-space: normal;
+        width: 50%;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    .invitationDisplay {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        word-wrap: break-word;
+        white-space: normal;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .receptVenue {
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 auto;
+        word-wrap: break-word;
+        white-space: normal;
+        width: 70%;
+    }
+    .name {
+        font-size: 0.7rem;
+        color: blue; 
+    }
+    .phoneNum {
+        text-align: center;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    hr {
+        font-weight: bold;
+    }
+}
