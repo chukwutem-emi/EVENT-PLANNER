@@ -43,7 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 .eventFile {
                     box-sizing: border-box;
-                    margin: 0 0 0 17rem;
+                    margin:0 auto;
+                    width:100%;
+                    border-radius: 50%;
+                    border: 6px solid darkblue;
                 }
                 .eventDetailsH6, .venueH3, .para {
                     text-align: center;

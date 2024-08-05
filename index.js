@@ -19,9 +19,9 @@ eventPictureEl.addEventListener("change", storeImage);
 function storeImage(event) {
     const file = event.target.files[0];
     console.log(file);
-    const maxSize = 10 * 1024;
+    const maxSize = 70 * 1024;
     if (file && file.size > maxSize) {
-        alert("file is too large.Please select a file smaller than 10KB.")
+        alert("file is too large.Please select a file smaller than 70KB.");
         return;
     }
     const reader = new FileReader();
